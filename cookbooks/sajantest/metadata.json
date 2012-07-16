@@ -4,6 +4,19 @@
   "name": "sajantest",
   "maintainer_email": "ops@example.com",
   "attributes": {
+    "sajantest/rs_hostname": {
+      "required": "required",
+      "calculated": false,
+      "choice": [
+
+      ],
+      "type": "string",
+      "recipes": [
+        "sajantest::test"
+      ],
+      "description": "sajan test metadata",
+      "display_name": "Nickname of the instance"
+    }
   },
   "license": "Apache 2.0",
   "suggestions": {
@@ -16,6 +29,7 @@
   "recommendations": {
   },
   "recipes": {
+    "sajantest::test": "sajan test"
   },
   "groupings": {
   },
