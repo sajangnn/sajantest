@@ -11,7 +11,7 @@ template "/etc/hostname" do
   end
 
 bash "set_hostname" do
-    code <<-EOH
+    code << EOH
       start hostname
     EOH
-  end
+  end
